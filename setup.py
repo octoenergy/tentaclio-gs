@@ -35,6 +35,7 @@ class VerifyVersionCommand(install):
 
 install_requires = [
     "tentaclio",
+    "google-cloud-storage",
 ]
 
 

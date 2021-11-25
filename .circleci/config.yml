@@ -91,7 +91,7 @@ jobs:
       - checkout_source
       - update_virtualenv
       - run:
-          name: Run postgres functional tests
+          name: Run s3 functional tests
           command: make functional
 
   release:
