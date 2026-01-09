@@ -57,10 +57,10 @@ def test_authenticated_api_calls(gs_url, bucket_exists):
 )
 def test_mocked_api_calls(mocker, url, bucket, key):
     """Test api calls reaches the mocks."""
-    mocker.patch("tentaclio.clients.gs_client.GSClient._connect")
-    m_remove = mocker.patch("tentaclio.clients.gs_client.GSClient._remove")
-    m_put = mocker.patch("tentaclio.clients.gs_client.GSClient._put")
-    m_get = mocker.patch("tentaclio.clients.gs_client.GSClient._get")
+    mocker.patch("tentaclio_gs.clients.gs_client.GSClient._connect")
+    m_remove = mocker.patch("tentaclio_gs.clients.gs_client.GSClient._remove")
+    m_put = mocker.patch("tentaclio_gs.clients.gs_client.GSClient._put")
+    m_get = mocker.patch("tentaclio_gs.clients.gs_client.GSClient._get")
     data = bytes("Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn", "utf-8")
 
     with tentaclio_gs.open(url, mode="wb") as f:
