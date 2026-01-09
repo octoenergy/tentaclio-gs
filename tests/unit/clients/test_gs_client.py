@@ -1,4 +1,5 @@
 """Test of the GS Client."""
+
 import io
 
 import pytest
