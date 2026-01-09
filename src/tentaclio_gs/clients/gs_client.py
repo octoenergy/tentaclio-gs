@@ -1,4 +1,5 @@
 """GS Stream client."""
+
 from typing import Optional, Tuple, Union, cast
 
 from google.cloud.storage import Bucket, Client

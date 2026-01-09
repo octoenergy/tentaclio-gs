@@ -1,4 +1,5 @@
-"""This package implements the tentaclio gs client """
+"""This package implements the tentaclio gs client"""
+
 from tentaclio import *  # noqa
 from tentaclio.clients import LocalFSClient
 

@@ -1,4 +1,5 @@
 """Test the api."""
+
 import pytest
 from google.cloud import exceptions as google_exceptions
 

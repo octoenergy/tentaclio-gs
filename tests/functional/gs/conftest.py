@@ -1,4 +1,5 @@
 """GS Functionality tests."""
+
 import os
 from urllib import parse
 
